@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_nova_conta"
+            android:icon="@mipmap/ic_add_count"
+            android:title="@string/nova_conta" />
+        <item
+            android:id="@+id/nav_saldo_total"
+            android:icon="@mipmap/ic_saldo"
+            android:title="@string/saldo_total" />
+        <item
+            android:id="@+id/nav_sair"
+            android:icon="@mipmap/ic_sair"
+            android:title="@string/sair" />
+    </group>
+</menu>

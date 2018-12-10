@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/cadastrar_credito"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/credito"
+        android:title="@string/cadastrar_credito"
+        />
+    <item
+        android:id="@+id/cadastrar_debito"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/debito"
+        android:title="@string/cadastrar_debito"
+        />
+</menu>
+
+

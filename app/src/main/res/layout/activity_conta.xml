@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_conta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.ContaActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/descricao_da_conta"
+            android:textSize="20sp">
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/editText_descricao_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/saldo_atual"
+            android:textSize="20sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/editText_saldo_inicial_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_consultar_extrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:text="@string/consultar_extrato"/>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_selecao_extrato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/selecione_o_extrato_desejado"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/radio_group_tipo_operacao_extrato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_button_extrato_mes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:text="@string/mes"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_button_extrato_categoria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text="@string/categoria"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_button_extrato_credito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text="@string/credito"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/radio_button_extrato_debito"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="17sp"
+                    android:text="@string/debito"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spinner_extrato_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:entries="@array/mes_operacao" />
+
+        <Spinner
+            android:id="@+id/spinner_extrato_categorias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:visibility="gone"
+            android:entries="@array/todas_as_categorias" />
+
+
+        <Button
+            android:id="@+id/btn_cadastrar_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/cadastrar_conta"/>
+
+        <Button
+            android:id="@+id/btn_excluir_conta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:text="@string/excluir_conta"/>
+
+        <Button
+            android:id="@+id/btn_gerar_extrato"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:text="@string/gerar_extrato"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,103 @@
+<resources>
+    <string name="app_name">Finanças-SDM</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nova_conta">Nova Conta</string>
+    <string name="cadastrar_credito">Cadastrar Crédito</string>
+    <string name="cadastrar_debito">Cadastrar Débito</string>
+    <string name="saldo_total">Saldo Total</string>
+    <string name="sair">Sair</string>
+    <string name="lista_de_contas_vazia">Lista de contas vazia</string>
+    <string name="lista_de_operacoes_vazia">Lista de operacoes vazia</string>
+    <string name="conta_cadastrada_com_sucesso">Conta cadastrada com sucesso</string>
+    <string name="credito_cadastrado_com_sucesso">Crédito cadastrado com sucesso</string>
+    <string name="debito_cadastrado_com_sucesso">Débito cadastrado com sucesso</string>
+    <string name="operacao_cadastrada_com_sucesso">Operação cadastrada com sucesso</string>
+    <string name="conta_alterada_com_sucesso">Conta alterada com sucesso</string>
+    <string name="conta_excluida_com_sucesso">Conta excluída com sucesso</string>
+    <string name="descricao_da_conta">Descrição da conta:</string>
+    <string name="descricao_da_operacao">Descrição da operação:</string>
+    <string name="saldo_atual">Saldo atual R$:</string>
+    <string name="valor_operacao">Valor da operação R$:</string>
+    <string name="cadastrar_conta">CADASTRAR CONTA</string>
+    <string name="alterar_conta">ALTERAR CONTA</string>
+    <string name="cadastrar_operacao">CADASTRAR OPERAÇÃO</string>
+    <string name="excluir_conta">EXCLUIR CONTA</string>
+    <string name="excluir_operacao">EXCLUIR OPERAÇÃO</string>
+    <string name="consultar_extrato">CONSULTAR EXTRATO</string>
+    <string name="gerar_extrato">GERAR EXTRATO</string>
+    <string name="credito">Crédito</string>
+    <string name="debito">Débito</string>
+    <string name="categoria">Categoria</string>
+    <string name="mes">Mês</string>
+    <string name="selecione_o_extrato_desejado">Selecione o extrato desejado</string>
+    <string name="categoria_da_operacao">Categoria da operação</string>
+    <string name="tipo_da_operacao">Tipo da operação</string>
+    <string name="a_operacao_se_repete">A operação se repete?</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="diario">Diário</string>
+    <string name="mensal">Mensal</string>
+    <string name="semanal">Semanal</string>
+    <string name="saldo_total_de_contas">Saldo Total de Contas</string>
+    <string name="cifrao">R$: </string>
+
+    <string-array name="categorias_credito">
+        <item>Salário</item>
+        <item>Vale Refeição</item>
+        <item>Vale Transporte</item>
+        <item>Auxílio Saúde</item>
+        <item>Hora Extra</item>
+        <item>Décimo Terceiro</item>
+    </string-array>
+
+    <string-array name="categorias_debito">
+        <item>Alimentação</item>
+        <item>Saúde</item>
+        <item>Transporte</item>
+        <item>Moradia</item>
+        <item>Educação</item>
+        <item>Lazer</item>
+        <item>Tarifa Bancária</item>
+        <item>Energia</item>
+        <item>Água</item>
+    </string-array>
+
+    <string-array name="mes_operacao">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string-array name="todas_as_categorias">
+        <item>Salário</item>
+        <item>Vale Refeição</item>
+        <item>Vale Transporte</item>
+        <item>Auxílio Saúde</item>
+        <item>Hora Extra</item>
+        <item>Décimo Terceiro</item>
+        <item>Alimentação</item>
+        <item>Saúde</item>
+        <item>Transporte</item>
+        <item>Moradia</item>
+        <item>Educação</item>
+        <item>Lazer</item>
+        <item>Tarifa Bancária</item>
+        <item>Energia</item>
+        <item>Água</item>
+    </string-array>
+
+</resources>
