@@ -135,8 +135,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             if (resultCode == RESULT_OK)
                 showSnackBar(getResources().getString(R.string.conta_alterada_com_sucesso));
 
-            if (resultCode == 3)                //RESULT CODE
+            if (resultCode == 3) {                //RESULT CODE
                 showSnackBar(getResources().getString(R.string.conta_excluida_com_sucesso));
+                List<Conta> contas;
+                contas = cDAO.buscarTodasContas();
+                saldoTotal = 0;
+                saldoTotal = calcularSaldoTotal(contas);
+                saldoTotalContas.setText(getResources().getText(R.string.cifrao) +String.valueOf(saldoTotal));
+            }
 
             atualizarUI();
         }
